@@ -200,6 +200,7 @@ var loadTasks = function() {
     tasks = localStorage.getItem("tasks");
     if (!tasks) {
         tasks = [];
+        return false;
     }
     // Convert taks from string to object array
     tasks = JSON.parse(tasks);
